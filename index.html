@@ -10,7 +10,6 @@
     <script>
         $(function(){
             $('.header.bg').height($('.depth02').height() + 265);
-
             $('.gnb>li, .bg').mouseenter(function(){
                 $('.depth02').stop().slideDown();
                 $('.header .bg').stop().slideDown();
@@ -18,7 +17,24 @@
             $('.gnb>li, bg').mouseleave(function(){
                 $('.depth02').stop().slideUp();
                 $('.header .bg').stop().slideUp();
-            })
+            }); //헤더 풀드롭다운
+            //탭메뉴 시작
+            let tapMenu = document.querySelectorAll('.menu li');
+            let itemWrap = document.querySelectorAll('.con_wrap');
+            for(let i=0; i<tapMenu.length; i++) {
+                tapMenu[i].addEventListener('click',() => {
+                    tapMenu.forEach(menuItem => {
+                        menuItem.classList.remove('active');
+                    });
+                    tapMenu[i].classList.add('active');
+
+                    itemWrap.forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    itemWrap[i].classList.add('active');
+                });
+            }//for문 end
+
         });
     </script>
 </head>
@@ -145,7 +161,7 @@
                     BEST MENU
                 </h2><!-- .title end -->
                 <ul class="menu">
-                    <li>신메뉴</li>
+                    <li class="active">신메뉴</li>
                     <li>디카페인</li>
                     <li>아이스 블랜디드</li>
                     <li>주스/에이드</li>
@@ -163,6 +179,60 @@
                         <img src="img/icon_btn_arrowNext.svg" alt="">
                     </div><!-- .btn_right end -->
                 </div><!-- .btn_wrap end -->
+                <div class="con_wrap active">
+                    <div class="con">
+                        <img src="img/bestmenu_01.png" alt="" />
+                        <div class="text">
+                            <p>홀리데이 체리소다</p>
+                            <strong>3,9</strong>
+                        </div><!-- .text end -->
+
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/bestmenu_02.png" alt="">
+                            <div class="text">
+                                <p>멜팅 초코 라떼</p>
+                                <strong>3,9</strong>
+                            </div><!-- .text end -->
+                            <div class="con02">
+                                <p>크리미한 우유와
+                                <br/>진한 멜팅초코 크림이 어우러져
+                                <br/>달콤하고 부드럽게 즐기는
+                                <br/>더벤티 시그니처 멜팅초코</p>
+                            </div><!-- .con02 end -->
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/bestmenu_03.png" alt="">
+                        <div class="text">
+                            <p>멜팅 딸기 치즈</p>
+                            <strong>3,9</strong>
+                        </div><!-- .text end -->
+                    </div><!-- .con end -->
+                </div><!-- .con_wrap end -->
+                <div class="con_wrap">
+                    <div class="con">
+                        <img src="img/coffee01.png" alt="" />
+                        <div class="text">
+                            <p>디카페인 아이스 아메리카노</p>
+                            <strong>2,9</strong>
+                        </div><!-- .text end -->
+
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/coffee02.png" alt="">
+                            <div class="text">
+                                <p>디카페인 콜드브루</p>
+                                <strong>2,9</strong>
+                            </div><!-- .text end -->
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/coffee03.png" alt="">
+                        <div class="text">
+                            <p>디카페인 헤이즐넛 크림 콜드브루</p>
+                            <strong>3,9</strong>
+                        </div><!-- .text end -->
+                    </div><!-- .con end -->
+                </div><!-- .con_wrap end -->
                 <div class="con_wrap">
                     <div class="con">
                         <img src="img/bestmenu_01.png" alt="" />
@@ -193,9 +263,111 @@
                         </div><!-- .text end -->
                     </div><!-- .con end -->
                 </div><!-- .con_wrap end -->
-            </div><!-- .con_wrap end -->
-        </div><!-- .section end -->
+                <div class="con_wrap">
+                    <div class="con">
+                        <img src="img/coffee01.png" alt="" />
+                        <div class="text">
+                            <p>디카페인 아이스 아메리카노</p>
+                            <strong>2,9</strong>
+                        </div><!-- .text end -->
+
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/coffee02.png" alt="">
+                            <div class="text">
+                                <p>디카페인 콜드브루</p>
+                                <strong>2,9</strong>
+                            </div><!-- .text end -->
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/coffee03.png" alt="">
+                        <div class="text">
+                            <p>디카페인 헤이즐넛 크림 콜드브루</p>
+                            <strong>3,9</strong>
+                        </div><!-- .text end -->
+                    </div><!-- .con end -->
+                </div><!-- .con_wrap end -->
+                <div class="con_wrap">
+                    <div class="con">
+                        <img src="img/bestmenu_01.png" alt="" />
+                        <div class="text">
+                            <p>홀리데이 체리소다</p>
+                            <strong>3,9</strong>
+                        </div><!-- .text end -->
+
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/bestmenu_02.png" alt="">
+                            <div class="text">
+                                <p>멜팅 초코 라떼</p>
+                                <strong>3,9</strong>
+                            </div><!-- .text end -->
+                            <div class="con02">
+                                <p>크리미한 우유와
+                                <br/>진한 멜팅초코 크림이 어우러져
+                                <br/>달콤하고 부드럽게 즐기는
+                                <br/>더벤티 시그니처 멜팅초코</p>
+                            </div><!-- .con02 end -->
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/bestmenu_03.png" alt="">
+                        <div class="text">
+                            <p>멜팅 딸기 치즈</p>
+                            <strong>3,9</strong>
+                        </div><!-- .text end -->
+                    </div><!-- .con end -->
+                </div><!-- .con_wrap end -->
+                <div class="con_wrap">
+                    <div class="con">
+                        <img src="img/coffee01.png" alt="" />
+                        <div class="text">
+                            <p>디카페인 아이스 아메리카노</p>
+                            <strong>2,9</strong>
+                        </div><!-- .text end -->
+
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/coffee02.png" alt="">
+                            <div class="text">
+                                <p>디카페인 콜드브루</p>
+                                <strong>2,9</strong>
+                            </div><!-- .text end -->
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/coffee03.png" alt="">
+                        <div class="text">
+                            <p>디카페인 헤이즐넛 크림 콜드브루</p>
+                            <strong>3,9</strong>
+                        </div><!-- .text end -->
+                    </div><!-- .con end -->
+                </div><!-- .con_wrap end -->
+                <div class="con_wrap">
+                    <div class="con">
+                        <img src="img/coffee01.png" alt="" />
+                        <div class="text">
+                            <p>디카페인 아이스 아메리카노</p>
+                            <strong>2,9</strong>
+                        </div><!-- .text end -->
+
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/coffee02.png" alt="">
+                            <div class="text">
+                                <p>디카페인 콜드브루</p>
+                                <strong>2,9</strong>
+                            </div><!-- .text end -->
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/coffee03.png" alt="">
+                        <div class="text">
+                            <p>디카페인 헤이즐넛 크림 콜드브루</p>
+                            <strong>3,9</strong>
+                        </div><!-- .text end -->
+                    </div><!-- .con end -->
+                </div><!-- .con_wrap end -->
+            </div><!-- .section end -->
         </div><!-- .best_menu end -->
+
 
         <div class="speciality_blend">
             <h2 class="title">
