@@ -7,6 +7,7 @@
     <title>더벤티(theVenti)</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script>
         $(function(){
             $('.header.bg').height($('.depth02').height() + 265);
@@ -18,6 +19,21 @@
                 $('.depth02').stop().slideUp();
                 $('.header .bg').stop().slideUp();
             }); //헤더 풀드롭다운
+            //메인비주얼
+            $('.main_visual_03').click(function(){
+                $(this).animate({'left':200},500);
+                $(this).siblings('.main_visual_02').animate({'right': -1610 , 'left': 100},500);
+            });
+            $('.main_visual_01').click(function(){
+                $(this).siblings('.main_visual_03').animate({'left': 1800},500);
+                $(this).siblings('.main_visual_02').animate({'left': 1710},500);
+            });
+            $('.main_visual_02').click(function(){
+                $(this).animate({'left':100},500);
+                $(this).siblings('.main_visual_03').animate({'left': 1800},500);
+            });
+            
+           
             //탭메뉴 시작
             let tapMenu = document.querySelectorAll('.menu li');
             let itemWrap = document.querySelectorAll('.con_wrap');
@@ -33,8 +49,7 @@
                     });
                     itemWrap[i].classList.add('active');
                 });
-            }//for문 end
-
+            };//for문 end
         });
     </script>
 </head>
@@ -128,7 +143,7 @@
 
     <main>
 
-        <div class="visual_wrap">
+        <div class="visual_wrap visual">
 
             <div class="main_visual_01">
                 <img src="img/main_visual_01.jpg" alt="" />

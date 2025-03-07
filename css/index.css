@@ -277,6 +277,10 @@ main {
     display: flex;
     position: relative;
 }
+.visual_wrap.visual {
+    cursor: pointer;
+    position: relative;
+}
 .visual_wrap .main_visual_01 .btn1 {
     width: 154px;
     background-color:transparent;
@@ -291,22 +295,35 @@ main {
     padding: 10px 0;
     text-align: center;
 }
-.visual_wrap .main_visual_01 img {
+.visual_wrap .main_visual_01 {
+    position: absolute;
     width: 100%;
     height: 100vh;
-    margin: -40px 0 0 0;
+    margin-left: auto;
+}
+.visual_wrap .main_visual_01 img {
+    position: relative;
+}
+.visual_wrap .main_visual_02 {
+    position: absolute;
+    height: 100vh;
+    margin-top: -75px;
+    right: -1710px;
 }
 .visual_wrap .main_visual_02 img {
+    position: relative;
+
+}
+.visual_wrap .main_visual_03  {
+    position: absolute;
     height: 100vh;
     margin-top: -75px;
-    position: absolute;
-    left: 1751px;
+    margin-right: auto;
+    right: -1800px;
 }
 .visual_wrap .main_visual_03 img {
-    height: 100vh;
-    margin-top: -75px;
-    position: absolute;
-    left: 1827px;
+    position: relative;
+    /* left: 1827px; */
 }
 
 /* 메인비주얼 사진 위 글씨 */
