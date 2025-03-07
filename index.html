@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theVenti_ko</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.header.bg').height($('.depth02').height() + 265);
+
+            $('.gnb>li, .bg').mouseenter(function(){
+                $('.depth02').stop().slideDown();
+                $('.header .bg').stop().slideDown();
+            });
+            $('.gnb>li, bg').mouseleave(function(){
+                $('.depth02').stop().slideUp();
+                $('.header .bg').stop().slideUp();
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="top_center">
+            <div class="noti">
+                <img src="img/icon_light.png" alt="ight icon">
+                <p><a href="#">공지사항</a>
+                <a href="#">더벤티, 2025년 9월 NBIFS 부산창업박람회 참가 안내</a></p>
+            </div><!-- .noti end -->
+            <div class="event">
+                <img src="img/icon_event.png" alt="event icon">
+                <p><a href="#">이벤트</a>
+                <a href="#">[프로모션]9월더벤티데이 X부락페데이</a></p>
+            </div><!-- .event end -->
+        </div><!-- .top_center end -->        
+        <div class="sns">
+            <a href="#"><img src="img/icon_sns_naver.png" alt="naver blog" /></a>
+            <a href="#"><img src="img/icon_sns_youtube.png" alt="youtube" /></a>
+            <a href="#"><img src="img/icon_sns_instagram.png" alt="instagram" /></a>
+        </div><!-- .sns end -->
+    </div><!-- .top end -->
+    <header class="header">
+
+        <div class="inner">
+            <h1><a href="#"><img src="img/logo_white.png" alt="더벤티 로고" /></a></h1>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li>
+                        <a href="#" class="depth01">BRAND</a>
+                        <ul class="depth02">
+                            <li><a href="#">더벤티 소개</a></li>
+                            <li><a href="#">더벤티 연혁</a></li>
+                            <li><a href="#">BI소개</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul><!-- .depth 02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">MENU</a>
+                        <ul class="depth02">
+                            <li><a href="#">더벤티 커피이야기</a></li>
+                            <li><a href="#">신메뉴</a></li>
+                            <li><a href="#">전체메뉴</a></li>
+                        </ul><!-- .depth 02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">STORE</a>
+                        <ul class="depth02">
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">칭찬매장</a></li>
+                        </ul><!-- .depth 02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">MEMBERSHIP</a>
+                        <ul class="depth02">
+                            <li><a href="#">더벤티APP소개</a></li>
+                        </ul><!-- .depth 02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">COMMUNITY</a>
+                        <ul class="depth02">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">벤티럭 사연접수</a></li>
+                            <li><a href="#">THEVENGERS봉사활동</a></li>
+                        </ul><!-- .depth 02 end -->
+                    </li>
+                </ul><!-- .gnb end -->
+            </nav><!-- .nav end -->
+
+            <div class="btn_wrap">
+                <div class="btn_v">
+                    <a href="#">프렌차이즈</a>
+                    <a href="#">
+                        <img src="img/logoV_white.png" alt="">
+                        <img src="img/logoV_DarkPurple.png" alt="" class="hover_v">
+                    </a>
+                </div><!-- .btn_v end -->
+                <div class="util">
+                    <a href="#"><img src="img/icon_menu.png" alt="" /></a>
+                </div><!-- .util end -->
+            </div><!-- .btn_wrap end -->
+        </div><!-- .inner end -->
+        <div class="bg">
+            <span>헤더 배경색</span>
+        </div>
+    </header><!-- .header end -->
+
+    <main>
+
+        <div class="visual_wrap">
+
+            <div class="main_visual_01">
+                <img src="img/main_visual_01.jpg" alt="" />
+                <div class="btn1">
+                    <a href="#">자세히보기 ></a>
+                </div><!-- .btn end -->
+                <div class="no">
+                    <p>01</p>
+                </div><!-- .no end -->
+            </div><!-- .main_visual_01 end -->
+            <div class="main_visual_02">
+                <img src="img/main_visual_02.jpg" alt="" />
+                <div class="no">
+                    <p>02</p>
+                </div><!-- .no end -->
+            </div><!-- .main_visual_02 end -->
+            <div class="main_visual_03">
+                <img src="img/main_visual_03.jpg" alt="" />
+                <div class="no">
+                    <p>03</p>
+                </div><!-- .no end -->
+            </div><!-- .main_visual_03 end -->
+
+        </div><!-- .visual_wrap end -->
+
+
+        <div class="best_menu">
+            <div class="menu_bar">
+                <h2 class="title">
+                    BEST MENU
+                </h2><!-- .title end -->
+                <ul class="menu">
+                    <li>신메뉴</li>
+                    <li>디카페인</li>
+                    <li>아이스 블랜디드</li>
+                    <li>주스/에이드</li>
+                    <li>버블티/티</li>
+                    <li>베버리지</li>
+                    <li>사이드메뉴/RTD</li>
+                </ul><!-- .menu end -->
+            </div><!-- .menu_bar end -->
+            <div class="section">
+                <div class="btn_wrap">
+                    <div class="btn_left">
+                        <img src="img/icon_btn_arrowPrev.svg" alt="">
+                    </div><!-- .btn_left end -->
+                    <div class="btn_right">
+                        <img src="img/icon_btn_arrowNext.svg" alt="">
+                    </div><!-- .btn_right end -->
+                </div><!-- .btn_wrap end -->
+                <div class="con_wrap">
+                    <div class="con">
+                        <img src="img/bestmenu_01.png" alt="" />
+                        <div class="text">
+                            <p>홀리데이 체리소다</p>
+                            <strong>3,9</strong>
+                        </div><!-- .text end -->
+
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/bestmenu_02.png" alt="">
+                            <div class="text">
+                                <p>멜팅 초코 라떼</p>
+                                <strong>3,9</strong>
+                            </div><!-- .text end -->
+                            <div class="con02">
+                                <p>크리미한 우유와
+                                <br/>진한 멜팅초코 크림이 어우러져
+                                <br/>달콤하고 부드럽게 즐기는
+                                <br/>더벤티 시그니처 멜팅초코</p>
+                            </div><!-- .con02 end -->
+                    </div><!-- .con end -->
+                    <div class="con">
+                        <img src="img/bestmenu_03.png" alt="">
+                        <div class="text">
+                            <p>멜팅 딸기 치즈</p>
+                            <strong>3,9</strong>
+                        </div><!-- .text end -->
+                    </div><!-- .con end -->
+                </div><!-- .con_wrap end -->
+            </div><!-- .con_wrap end -->
+        </div><!-- .section end -->
+        </div><!-- .best_menu end -->
+
+        <div class="speciality_blend">
+            <h2 class="title">
+                SPECIALITY BLEND
+            </h2><!-- .title end -->
+
+            <div class="sig">
+                <div class="berry">
+                    <img src="img/sig.png" alt="">
+                </div><!-- .berry end -->
+                <div class="dark">
+                    <img src="img/dark.png" alt="">
+                </div><!-- .dark end -->
+                <div class="dicaf">
+                    <img src="img/dicaf.png" alt="">
+                </div><!-- .dicaf end -->
+            </div><!-- .sig end -->
+
+            <img src="img/path.png" alt="" />
+        </div><!-- .speciality_blend end -->
+
+        <div class="v_sns">
+            <h2 class="title">
+                THEVENTI SNS
+            </h2><!-- .title end -->
+            <div class="pic">
+                <div class="sq1">
+                    <a href="#"></a>
+                </div><!-- .sq1 end -->
+                <div class="sq2">
+                    <a href="#"></a>
+                </div><!-- .sq2 end -->
+                <div class="sq3">
+                    <a href="#"></a>
+                </div><!-- .sq3 end -->
+
+            </div><!-- .pic -->
+
+        </div><!-- .v_sns end -->
+
+        <div class="luck">
+
+            <h2 class="title">
+                VENTI LUCK
+            </h2><!-- .title end -->
+
+            <div class="contain">
+
+            <a href="#"><img src="img/venti_luck_img.jpg" alt=""></a>
+            
+            <div class="right">
+                <div class="right_top">
+                    <div class="whats">
+                        <a href="#">
+                            <span>움직이는 더벤티</span>
+                            <br/>더벤티의
+                            <br/>벤티럭이란?
+                        </a>
+                        <img src="img/icon_black_arrow.svg" alt=""/>
+                    </div><!-- .whats end -->
+                    <div class="luck_sns">
+                        <a href="#">
+                            <span>벤티럭 SNS</span>
+                            <br/>VENTI LUCK
+                            <br/>SNS</a>
+                            <img src="img/icon_black_arrow.svg" alt=""/><!-- 7029x X 516px크기 -->
+                    </div><!-- .luck_sns -->
+                </div><!-- .right_top end -->
+                <div class="form">
+                    <a href="#">벤티럭 사연 접수하기</a>
+                    <img src="img/icon_black_arrow.svg" alt=""/>
+                </div><!-- .form end -->
+            </div><!-- .right end -->
+
+        </div><!-- .contain end -->
+
+        </div><!-- .luck end -->
+
+        <div class="scroll">
+            <ul class="list">
+                <li>
+                    <div>
+                        <img src="img/cart01.png" alt="" />
+                        <p>국가소비자중심
+                            <br>브랜드대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart02.png" alt="" />
+                        <p>소비자가 신뢰하는
+                        <br />착한브랜드 대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart03.png" alt="" />
+                        <p>한국소비자포럼
+                            <br>&BrandKey
+                            <br>고객충성도대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart04.png" alt="" />
+                        <p>대한민국
+                            <br />퍼스트브랜드
+                            <br />대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart05.png" alt="" />
+                        <p>고객사랑
+                            <br>브랜드대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart06.png" alt="" />
+                        <p>소비자가뽑은
+                            <br />서비스 고객만족
+                            <br />대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart07.png" alt="" />
+                        <p>한국브랜드
+                            <br />만족지수
+                            <br />1위
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart08.png" alt="" />
+                        <p>한국프랜차이즈
+                            <br />국무총리
+                            <br />표창
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart11.png" alt="" />
+                        <p>2023
+                            <br />국가산업대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart10.png" alt="" />
+                        <p>한국프랜차이즈
+                            <br />산업통상자원부장관
+                            <br />표창
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart111.png" alt="" />
+                        <p>제 24회 한국프랜차이즈
+                            <br />우수 프랜차이즈 부문
+                            <br />협회장 표창
+                        </p>
+                    </div>
+                </li>
+            </ul><!-- .list end -->
+            <ul class="list">
+                <li>
+                    <div>
+                        <img src="img/cart01.png" alt="" />
+                        <p>국가소비자중심
+                            <br>브랜드대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart02.png" alt="" />
+                        <p>소비자가 신뢰하는
+                        <br />착한브랜드 대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart03.png" alt="" />
+                        <p>한국소비자포럼
+                            <br>&BrandKey
+                            <br>고객충성도대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart04.png" alt="" />
+                        <p>대한민국
+                            <br />퍼스트브랜드
+                            <br />대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart05.png" alt="" />
+                        <p>고객사랑
+                            <br>브랜드대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart06.png" alt="" />
+                        <p>소비자가뽑은
+                            <br />서비스 고객만족
+                            <br />대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart07.png" alt="" />
+                        <p>한국브랜드
+                            <br />만족지수
+                            <br />1위
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart08.png" alt="" />
+                        <p>한국프랜차이즈
+                            <br />국무총리
+                            <br />표창
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart11.png" alt="" />
+                        <p>2023
+                            <br />국가산업대상
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart10.png" alt="" />
+                        <p>한국프랜차이즈
+                            <br />산업통상자원부장관
+                            <br />표창
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div><img src="img/cart111.png" alt="" />
+                        <p>제 24회 한국프랜차이즈
+                            <br />우수 프랜차이즈 부문
+                            <br />협회장 표창
+                        </p>
+                    </div>
+                </li>
+            </ul><!-- .list end -->
+        </div><!-- .scroll end -->
+        
+        <div class="quick">
+            <ul class="fix">
+                <li><a href="#">
+                        <div>
+                            가맹문의<img src="img/icon_talk.png" alt="">
+                        </div>
+                    </a></li>
+                <li><a href="#">
+                        <div>
+                            고객상담<img src="img/icon_headphones.svg" alt="" class="quick_icon"/>
+                        </div>
+                    </a></li>
+            </ul><!-- .fix end -->
+        </div><!-- .quick end -->
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer_wrap">
+
+            <div class="contain_f">
+
+                <div class="tel_wrap">
+                    <div>
+                        가맹문의
+                        <a href="#">1661-4553</a>
+                    </div>
+                    <div>
+                        고객센터
+                        <a href="#">1644-0513</a>
+                    </div>
+                </div><!-- .tel_wrap end -->
+                
+                <div class="center_f">
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">더벤티 소개</a></li>
+                            <li><a href="#">제휴/제안</a></li>
+                            <li><a href="#">고객상담</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">이용약관</a></li>
+                        </ul>
+                    </div><!-- .footer_menu end -->
+                    <div class="text_wrap">
+                        <div class="city">
+                            <p><span>더벤티 부산&교육센터</span>
+                               부산광역시 해운대구 센텀서로 30, 2507호(KNN타워)
+                            </p>
+                        </div>
+                        <div class="city">
+                            <p><span>더벤티 서울&교육센터</span>
+                                서울특별시 구로구 디지털로33길 27 408~414호
+                            </p>
+                        </div>
+                        <div>
+                            (주)에스앤씨세인
+                            <span>사업자번호: 543-88-00122</span>
+                            <span>대표이사: 박수암 강삼남 최준경</span>
+                        </div>
+                    </div><!-- .text_wrap end -->
+                </div><!-- .center_f end -->
+                <div class="intro">
+                    인트로
+                    <img src="img/logoV_white.png" alt="">
+                    <img class="hover_fv" src="img/logoV_DarkPurple.png" alt="" />
+                </div><!-- .intro end -->
+                
+            </div><!-- .contain_f end -->
+
+
+
+                <div class="logo">
+                    the <span>V</span>enti
+                </div>
+                
+                <div class="copyright">
+                    Copyright © THEVENTI. All right Reserved.Created By Masstige.
+                </div>
+        </div><!-- .footer_wrap end -->
+            <div class="top_btn">
+                <a href="#">
+                    <img src="img/icon_footer_page_top.png" alt=""/>
+                    TOP</a>
+            </div><!-- .top_btn end -->
+    </footer>
+
+</body>
+
+</html>
